@@ -1,0 +1,453 @@
+@import "color";
+
+@media (max-width: 1199px) {
+    .nav-web, .nav-web ul, .title-web, .solutions-img-web, .web-img{
+        display: none;
+    }
+
+body{
+    font-family: 'Ubuntu';
+    margin: 0;
+    padding-top: 0;
+}
+
+// =========================== NAVIGATEUR =========================== //
+
+.nav-web{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    background-color: white;
+
+    .nav-logo{
+        width: 150px;
+        margin: 0;
+    }
+    .burger-mobile{
+        width: 30px;
+        margin: 0;
+        cursor: pointer;
+    }
+    .modal-burger{
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 9999;
+        width: 30%;
+        height: 300px;
+        background-color: $white;
+
+        ul{
+            display: block;
+            padding-left: 0;
+            margin: 0;
+            li{
+                    padding: 20px 5px;
+                    list-style: none;
+                    font-size: 0.8em;
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        color: $black;
+                    }
+                    a:hover{
+                        color: $red;
+                    }
+                }
+        }
+
+    }
+    .modal-burger-open{
+        display:block;
+    }
+}
+
+// =========================== HEADER =========================== //
+
+.bgheader{
+  background: url(./assets/img/imagesSite/globeNoirBlanc.jpg);  
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+
+  .accroches{
+      padding-top: 200px;
+  }
+  h1{
+      color: white;
+      font-size: 20px;
+      text-align: right;
+      padding-top: 50px;
+      padding-right: 5%;
+      font-weight: lighter;
+
+  }
+}
+
+// =========================== PRESENTATION =========================== //
+
+.presentation{
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: lighter;
+        padding-top: 5%;
+    }
+
+    p{
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .textblack{
+        color: $black;
+    }
+
+    .textgray{
+        color: $gray;
+    }
+}
+
+// =========================== Conseil & Prestations =========================== //
+
+.prestations{
+    background: url(./assets/img/imagesSite/couloirNoirBlanc.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        padding-top: 30px;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+}
+
+.flex-prestations{
+    p{
+        text-align: center;
+        white-space: pre-line;
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    .bgwhite{
+        background-color: rgba(255, 255, 255, 0.7);
+        margin: 20px;
+        box-shadow: 0 3px 12px black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .space{
+        display: block;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        font-size: 24px;
+    }
+}
+
+// =========================== Solutions =========================== //
+
+.section{
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+    .flex{
+        .blocktest{
+            h2{
+                text-align: center;
+                font-size: 30px;
+                font-weight: lighter;
+                color: $red;
+            }
+        
+            p{
+                font-size: 25px;
+                margin: 30px;
+                color: $gray;
+            }
+        }
+    }
+    .cards{
+        img{
+            display: block;
+            width: 100px;
+            margin: auto;
+        }
+
+        h3{
+            text-align: center;
+            font-size: 25px;
+            font-weight: lighter;
+            color: $black;
+        }
+
+        p{
+            text-align: center;
+            color: $gray;
+            font-size: 20px;
+            margin: 30px;
+        }
+    }
+    .card{
+        border: hidden;
+        img{
+            display: block;
+            width: 100px;
+            margin: auto;
+        }
+
+        h3{
+            margin: 0;
+            text-align: center;
+            font-size: 25px;
+            font-weight: lighter;
+            color: $black;
+        }
+
+        p{
+            text-align: center;
+            color: $gray;
+            font-size: 20px;
+            margin: 30px;
+        }
+    }
+}
+
+// =========================== Clients & Partenaires =========================== //
+
+.carousel-clients, .carousel-partenaires{
+    margin-bottom: 50px;
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        padding-top: 50px;
+    }
+    .images-clients, .images-partenaires{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        
+        img{
+            width: 100px;
+        }
+    }
+}
+
+// =========================== Datacenter =========================== //
+
+.datacenter{
+    background: url(./assets/img/imagesSite/globe-datacenterNoirBlanc.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+
+   
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        padding-top: 100px;
+        margin: 0;
+        color: $white;
+        padding-bottom: 100px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-weight: lighter;
+        color: $white;
+
+        span{
+            color: $red;
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+
+    p{
+        text-align: center;
+        color: $white;
+    }
+
+    .equinix, .virtuacenter{
+        margin: 50px;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        h2, p{
+            font-size: 22px;
+            padding: 30px;
+        }
+
+        .mobile-img{
+            width: 100%;
+            display: block;
+            margin: auto;
+            padding: 0;
+        }
+    }
+}
+
+// =========================== Contact =========================== //
+.contact{
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        margin-top: 100px;
+    }
+
+    .logo-contact{
+        width: 250px;
+        display: block;
+        margin: auto;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        font-size: 24px;
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+// =========================== Formulaire de contact =========================== //
+
+.form-contact{
+    display: block;
+    margin: 20px;
+
+    label{
+        display: block;
+        color: $red;
+        margin-top: 20px;
+    }
+
+    .input, textarea{
+        width: 100%;
+        border-color: $red;
+        border-width: 1px;
+        font-size: 18px;
+        align-items: center;
+    }
+
+    textarea{
+        height: 250px;
+        resize: none;
+        font-family: 'Ubuntu';
+    }
+
+    .button{
+        background-color: $red;
+        color: white;
+        font-size: 30px;
+        display: block;
+        margin: auto;
+        border-radius: 520px;
+        border-style: none;
+        padding: 20px;
+        margin-top: -40px;
+        cursor: pointer;
+        position: relative;
+        text-transform: uppercase;
+        transition: background-color 1s;
+        transition: color 1s;
+    }
+
+    .button:hover{
+        background-color: $gray;
+        transition: 1s;
+        color: $red;
+    }
+}
+
+// =========================== Footer =========================== //
+
+footer{
+    background: $black;
+    background: linear-gradient(0deg, $black 23%, $red 100%);
+    margin-top: 60px;
+
+    .social-footer{
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+    }
+
+    img{
+        width: 50px;
+        padding-top: 20px;
+    }
+
+    ul{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    li{
+        list-style: none;
+        text-align: center;
+        display: inline;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        transition: color 1s;
+    }
+
+    a:hover{
+        color: $gray;
+        transition: 1s;
+    }
+
+    p{
+        color: $white;
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+}

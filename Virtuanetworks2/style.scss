@@ -1,0 +1,30 @@
+/*
+Theme Name: Virtua Network 2
+Author: Brahim, Tristan, Mathieu
+Description: Un nouveau thème pour un site de data center.
+Text Domain: Virtua Network 2
+Tags: data, connect, network
+screenshot.png
+*/
+
+@import 'assets/css/onepage-mobile',  'assets/css/cgv-mobile', 'assets/css/mentions-mobile',   'assets/css/cgv-web', 'assets/css/mentions-web', 'assets/css/onepage-web';
+.carousel-item {
+    transition: 3s
+};
+
+.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.verif {
+    visibility: hidden;
+}
+
+
+.owl-item {
+    padding: 0%;
+    margin: 0px 0%;
+    background-color: unset!important;
+    min-height: 0!important;
+}
